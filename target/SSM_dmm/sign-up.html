@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?1855">
+	<link rel="stylesheet" type="text/css" href="style.css?7482">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?7717">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/linecons.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Serif+Caption&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<title>Sign up</title>
+	<script src="js/Fuctions.js"></script>
+	<script>
+		$(document).ready(function () {
+			var data = window.sessionStorage.getItem("user");
+			if (data != null) {
+				var user = $.parseJSON(data);
+				$("#showName").html(user.username);
+			} else {
+				$("#showName").append("欢迎");
+			}
+		});
+	</script>
+
+
+
+
+	<!-- Analytics -->
+
+	<!-- Analytics END -->
+
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+
+	<!-- bloc-9 -->
+	<div class="bloc bgc-red-pigment d-bloc" id="bloc-9">
+		<div class="container ">
+			<div class="row">
+				<div class="col coll">
+					<nav class="navbar navbar-light row navbar-expand-md" role="navigation">
+						<a class="navbar-brand" href="index.html"><img src="img/lazyload-ph.png" data-src="img/Copyright_96px_1177452_easyicon.net.png" alt="logo" class="mr-2 lazyload" />SupremeBook</a>
+						<button id="nav-toggle" type="button" class="ml-auto ui-navbar-toggler navbar-toggler border-0 p-0" data-toggle="collapse" data-target=".navbar-45579" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-45579">
+							<ul class="site-navigation nav navbar-nav ml-auto">
+								<li class="nav-item">
+									<a href="index.html" class="nav-link ltc-platinum">Home</a>
+								</li>
+								<li class="nav-item">
+									<a href="about.html" class="nav-link ltc-platinum">about</a>
+								</li>
+								<li class="nav-item">
+									<a href="contact.html" class="nav-link ltc-platinum">contact</a>
+								</li>
+								<li class="nav-item">
+								</li>
+								<li class="nav-item">
+									<a href="administrator-homepage.html" class="a-btn nav-link ltc-platinum">administrator-homepage</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bloc-9 END -->
+
+	<!-- bloc-10 -->
+	<div class="bloc bgc-white-smoke l-bloc" id="bloc-10">
+		<div class="container bloc-sm">
+			<div class="row">
+				<div class="col-12 col-11 col-lg-8 offset-lg-2">
+					<h3 class="mg-md text-center ">
+						<i>Thank you for your supporting</i><br>
+					</h3>
+					<h1 class="mg-md text-lg-center p-10-style h1-join-us-now--style">
+						<strong>Join us NOW!</strong>
+					</h1>
+					<div class="text-center">
+						<span class="fa fa-angle-double-down threeD-t icon-lg icon-red-pigment"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bloc-10 END -->
+
+	<!-- bloc-11 -->
+	<div class="bloc bgc-white-smoke l-bloc" id="bloc-11">
+		<div class="container bloc-sm">
+			<div class="row">
+				<div class="col-md-6 order-md-1 col-lg-6 offset-lg--1 col bgc-silver">
+					<form id="form_2" data-form-type="blocs-form" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" action="custom-action-url" method="POST">
+						<div class="form-group">
+							<label>
+								<strong>Display Name</strong>
+							</label>
+							<input id="username" class="form-control" required name="name" />
+						</div>
+						<div class="form-group">
+							<label>
+								<strong>Email</strong>
+							</label>
+							<input id="email" class="form-control" type="email" data-error-validation-msg="Not a valid email address" required name="email" />
+						</div>
+						<div class="form-group">
+							<label>
+								<strong>Password</strong>
+							</label>
+							<div class="form-group">
+								<input class="form-control" id="input" name="input_2716" type="password" />
+								<div class="alert alert-success" role="alert">
+									<a href="#" class="btn btn-d btn-lg btn-style-none float-right" data-dismiss="alert" aria-label="Close"><span class="fa fa-close close"></span></a>
+									<p class="mb-0 float-lg-none">
+										Passwords must contain at least eight characters, including at least 1 letter an 1number.
+									</p>
+								</div>
+							</div>
+							<select class="form-control role-style" id="role" name="role">
+								<option value="T">
+									Teacher
+								</option>
+								<option value="S">
+									Student
+								</option>
+								<option value="A">
+									Administrator
+								</option>
+							</select>
+							<div class="form-group container-div-bloc-11-style">
+								<div class="container-div-0-bloc-11-style">
+									<h3 class="mg-md text-justify h33-style">
+										<span class="fa fa-star"></span>&nbsp;Choose your Role :
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="optin" data-validation-minchecked-message="You must agree to this before we can take your information." data-validation-minchecked-minchecked="1" name="optin" />
+							<label class="form-check-label">
+								We can send you product updates and offers via email. It is possible to opt-out at any time.
+							</label>
+						</div>
+						<div class="text-center">
+							<input type="button" value="sign up" onclick="addUser()" class="btn btn-lg btn-sign-up-style btn-rd btn-blue-ryb"/>
+							<!--						<a class="btn btn-lg btn-sign-up-style btn-rd btn-blue-ryb" id="sign-up" href="javascript:void(0);return false;" onclick="addUser();return false;">Sign up<br></a>-->
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 align-self-center">
+					<h2 class="mg-md">
+						<strong>Join the Supreme Book community</strong>
+					</h2>
+					<h3 class="mg-md">
+						<span class="fa fa-star"></span>Feature1
+					</h3>
+					<h3 class="mg-md">
+						<span class="fa fa-star"></span>Feature2
+					</h3>
+					<h3 class="mg-md">
+						<span class="fa fa-star"></span>Feature3
+					</h3>
+					<h3 class="mg-md">
+						<span class="fa fa-star"></span>Feature4
+					</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bloc-11 END -->
+
+	<!-- ScrollToTop Button -->
+	<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><span class="fa fa-chevron-up"></span></a>
+	<!-- ScrollToTop Button END-->
+
+
+	<!-- bloc-12 -->
+	<div class="bloc bgc-deep-carmine-pink d-bloc" id="bloc-12">
+		<div class="container bloc-sm">
+			<div class="row">
+				<div class="col coll">
+					<nav class="navbar row navbar-expand-md navbar-light" role="navigation">
+						<a class="navbar-brand link-style" href="index.html"><img src="img/lazyload-ph.png" data-src="img/Copyright_96px_1177452_easyicon.net.png" alt="logo" class="mr-2 lazyload" />Supreme Book Copyright©2020</a>
+						<button id="nav-toggle0" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 ml-auto mr-md-0" data-toggle="collapse" data-target=".navbar-24016" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="navbar-content-area d-block col-md-3 col-lg-2 col coll">
+							<div class="row">
+								<div class="align-self-center col-4 text-left">
+									<a href="https://blocsapp.com/"><span class="fa fa-facebook-official icon-md"></span></a>
+								</div>
+								<div class="align-self-center col-4 text-center">
+									<a href="https://blocsapp.com/"><span class="fa fa-twitter float-md-none icon-md"></span></a>
+								</div>
+								<div class="align-self-center col-4 text-right">
+									<a href="https://blocsapp.com/"><span class="fa fa-instagram float-lg-none icon-md"></span></a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bloc-12 END -->
+
+</div>
+<!-- Main container END -->
+
+
+<script src="./js/jquery-3.3.1.min.js?6238"></script>
+<script src="./js/bootstrap.bundle.min.js?2457"></script>
+<script src="./js/blocs.min.js?9559"></script>
+<script src="./js/jqBootstrapValidation.js"></script>
+<script src="./js/formHandler.js?9943"></script>
+<script src="./js/lazysizes.min.js" defer></script>
+<!-- Additional JS END -->
+
+
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+<!-- Preloader END -->
+
+</body>
+</html>

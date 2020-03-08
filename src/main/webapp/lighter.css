@@ -1,0 +1,588 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#lightboxer {
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    z-index: 3;
+}
+
+#lightbox {
+    display: none;
+    width: 840px;
+    height: 100%;
+    background-color: #FFF;
+    color: #191919;
+}
+
+#lightbox .page {
+    padding: 0px;
+}
+
+/* Lightbox People */
+
+.lila #lightbox .content {
+    color: #191919;
+}
+
+#lightbox.people {
+
+    display: block;
+    position: absolute;
+    width: 840px;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    margin-left: -420px;
+    color: #191919;
+    text-align: left;
+    overflow: scroll;
+}
+
+#lightbox.people .lightboxnav {
+    position: absolute;
+    top: 32px;
+    right: 20px;
+    z-index: 4;
+}
+
+#lightbox.people .lightboxnav a {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+#lightbox.people .lightboxnav a img {
+    border: none;
+    width: 100%;
+    height: auto;
+}
+
+
+#lightbox.people .lightboxnav .back {
+    position: absolute;
+    width: 9px;
+    height: 17px;
+    top: 0px;
+    right: 75px;
+}
+
+#lightbox.people .lightboxnav .forward {
+    position: absolute;
+    width: 9px;
+    height: 17px;
+    top: 0px;
+    right: 41px;
+}
+
+#lightbox.people .lightboxnav .close {
+    position: absolute;
+    width: 16px;
+    height: 17px;
+    top: 0px;
+    right: 0px;
+}
+
+#lightbox.people .left {
+    display: block;
+    position: relative;
+    width: 286px;
+    height: 100%;
+    float: left;
+    background-color: #320033;
+}
+
+#lightbox.people .left .buttons {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 40px;
+    z-index: 2;
+    background-color: #FFF;
+}
+
+#lightbox.people .left .buttons .download_pdf {
+    display: block;
+    position: relative;
+    width: 20px;
+    margin: 10px 0px 10px 10px;
+}
+
+#lightbox.people .left .buttons .print_page {
+    display: block;
+    position: relative;
+    width: 20px;
+    margin: 10px 0px 10px 10px;
+}
+
+#lightbox.people .left .buttons a img {
+    width: 100%;
+    height: auto;
+}
+
+#lightbox.people .left .image {
+    display: block;
+    position: relative;
+    width: 286px;
+    height: 366px;
+    background-color: #FFF;
+}
+
+#lightbox.people .left .image img {
+    display: block;
+}
+
+#lightbox.people .left .social {
+    display: block;
+    position: relative;
+    width: 286px;
+    height: 48px;
+    background-color: #120114;
+}
+
+#lightbox.people .left .social .icon.xing {
+    display: inline-block;
+    height: 48px;
+    line-height: 58px;
+    margin-left: 18px;
+    margin-top: 0;
+    overflow: hidden;
+    position: relative;
+    width: 15px;
+}
+
+#lightbox.people .left .social .icon.linkedin {
+    display: inline-block;
+    height: 48px;
+    line-height: 52px;
+    margin-left: 18px;
+    margin-top: 0;
+    overflow: hidden;
+    position: relative;
+    width: 15px;
+}
+
+#lightbox.people .left .social .icon img {
+    width: 100%;
+    height: auto;
+}
+
+#lightbox.people .left .contact {
+    padding: 18px;
+    color: #FFF;
+    font-size: 0.8em;
+}
+
+#lightbox.people .left .contact p {
+    padding-top: 6px;
+}
+
+#lightbox.people .left .contact h2 {
+    color: #ED1C00;
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
+}
+
+#lightbox.people .left .contact a {
+    color: #ED1C00;
+    text-decoration: none;
+}
+
+#lightbox.people .right {
+    display: block;
+    position: relative;
+    width: 510px;
+    float: left;
+    margin-left: 26px;
+    font-size: 80%;
+}
+
+#lightbox.people .head {
+    margin-top: 36px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    height: 155px;
+}
+
+#lightbox.people .head h2 {
+    left: 10px;
+}
+
+#lightbox.people .content {
+    padding-left: 10px;
+}
+
+#lightbox.people div.intro {
+    padding-bottom: 40px;
+}
+
+#lightbox.people div.copy {
+    padding-bottom: 40px;
+}
+
+#lightbox.people .accordion h2 {
+    background: url("/images/arrow_red_down.svg") no-repeat scroll 484px 8px rgba(0, 0, 0, 0);
+    background-size:19px 10px;
+}
+
+#lightbox.people .accordion.open h2 {
+    background: url("/images/arrow_red_up.svg") no-repeat scroll 484px 8px rgba(0, 0, 0, 0);
+    background-size:19px 10px;
+}
+
+#lightbox.projects {
+
+    display: block;
+    position: absolute;
+    width: 840px;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    margin-left: -420px;
+    color: #191919;
+    font-size: 80%;
+    text-align: left;
+    overflow: scroll;
+}
+
+#lightbox.projects .innerlightboxwrap {
+    display: block;
+    position: relative;
+    width: 840px;
+    margin: 0px auto;
+
+    padding-bottom: 60px;
+}
+
+#lightbox.projects .lightboxnav {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    z-index: 4;
+}
+
+#lightbox.projects .lightboxnav a {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+#lightbox.projects .lightboxnav a img {
+    border: none;
+    width: 100%;
+    height: auto;
+}
+
+
+#lightbox.projects .lightboxnav .back {
+    position: absolute;
+    width: 9px;
+    height: 17px;
+    top: 0px;
+    right: 75px;
+}
+
+#lightbox.projects .lightboxnav .forward {
+    position: absolute;
+    width: 9px;
+    height: 17px;
+    top: 0px;
+    right: 41px;
+}
+
+#lightbox.projects .lightboxnav .close {
+    position: absolute;
+    width: 16px;
+    height: 17px;
+    top: 0px;
+    right: 0px;
+}
+
+#lightbox.projects .head {
+    margin-top: 36px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    margin-left: 54px;
+    height: 155px;
+    border-left: 1px solid #f42837;
+    display: block;
+    position: relative;
+}
+
+#lightbox.projects .head h1 {
+    color: #f42837;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#lightbox.projects .head h2 {
+    bottom: -11px;
+    color: #f42837;
+    font-family: "AvenirLT-Heavy";
+    font-size: 2.25em;
+    font-weight: normal;
+    left: 20px;
+    position: absolute;
+    padding-right: 80px;
+}
+
+#lightbox.projects .content {
+    padding-left: 74px;
+    padding-right: 80px;
+}
+
+#lightbox.projects div.intro {
+    padding-bottom: 40px;
+}
+
+#lightbox.projects div.copy {
+    padding-bottom: 40px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+
+#lightbox.projects div.copy h2 {
+    font-size: 1.4em;
+    line-height: 2em;
+    color: #f42837;
+    font-weight: normal;
+}
+
+#lightbox.projects div.copy ul {
+    padding-bottom: 20px;
+}
+
+#lightbox.projects div.copy li {
+    list-style: none;
+    padding-left: 15px;
+    background: url(images/bullet-line.png) 0px 12px no-repeat;
+}
+
+#lightbox.projects .buttons {
+    background-color: #FFFFFF;
+    display: block;
+    left: 7px;
+    position: absolute;
+    top: -6px;
+    width: 40px;
+    z-index: 2;
+}
+
+#lightbox.projects .buttons .download_pdf {
+    display: block;
+    position: relative;
+    width: 20px;
+    margin: 10px 0px 10px 10px;
+}
+
+#lightbox.projects .buttons .print_page {
+    display: block;
+    position: relative;
+    width: 20px;
+    margin: 10px 0px 10px 10px;
+}
+
+#lightbox.projects  .buttons a img {
+    width: 100%;
+    height: auto;
+}
+
+/* Lightbox Content */
+
+/*
+#lightbox.content {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #191919;
+    text-align: left;
+    overflow: scroll;
+}*/
+
+#lightbox.content {
+
+    display: block;
+    position: absolute;
+    width: 840px;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    margin-left: -420px;
+    color: #191919;
+    text-align: left;
+    overflow: scroll;
+}
+
+#lightbox.content .innerlightboxwrap {
+    display: block;
+    position: relative;
+    width: 840px;
+    margin: 0px auto;
+
+    padding-bottom: 60px;
+}
+
+#lightbox.content .lightboxnav {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    z-index: 4;
+}
+
+#lightbox.content .lightboxnav a {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+#lightbox.content .lightboxnav a img {
+    border: none;
+    width: 100%;
+    height: auto;
+}
+
+
+#lightbox.content .lightboxnav .back {
+    position: absolute;
+    width: 9px;
+    height: 17px;
+    top: 0px;
+    right: 75px;
+}
+
+#lightbox.content .lightboxnav .forward {
+    position: absolute;
+    width: 9px;
+    height: 17px;
+    top: 0px;
+    right: 41px;
+}
+
+#lightbox.content .lightboxnav .close {
+    position: absolute;
+    width: 16px;
+    height: 17px;
+    top: 0px;
+    right: 0px;
+}
+
+#lightbox.content .head {
+    margin-top: 36px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    margin-left: 54px;
+    height: 155px;
+    border-left: 1px solid #f42837;
+    display: block;
+    position: relative;
+}
+
+#lightbox.content .head h1 {
+    color: #f42837;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#lightbox.content .head h2 {
+    bottom: -11px;
+    color: #f42837;
+    font-family: "AvenirLT-Heavy";
+    font-size: 2.25em;
+    font-weight: normal;
+    left: 20px;
+    position: absolute;
+    padding-right: 80px;
+}
+
+#lightbox.content .content {
+    padding-left: 74px;
+    padding-right: 80px;
+}
+
+#lightbox.content div.intro {
+    padding-bottom: 40px;
+}
+
+#lightbox.content div.copy {
+    padding-bottom: 40px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+
+#lightbox.content div.copy h2 {
+    font-size: 1.4em;
+    line-height: 2em;
+    color: #f42837;
+    font-weight: normal;
+}
+
+#lightbox.content div.copy ul {
+    padding-bottom: 20px;
+}
+
+#lightbox.content div.copy li {
+    list-style: none;
+    padding-left: 15px;
+    background: url(images/bullet-line.png) 0px 12px no-repeat;
+}
+
+#lightbox.content .buttons {
+    background-color: #FFFFFF;
+    display: block;
+    left: 7px;
+    position: absolute;
+    top: 28px;
+    width: 40px;
+    z-index: 2;
+}
+
+#lightbox.content .buttons .download_pdf {
+    display: block;
+    position: relative;
+    width: 20px;
+    margin: 10px 0px 10px 10px;
+}
+
+#lightbox.content .buttons .print_page {
+    display: block;
+    position: relative;
+    width: 20px;
+    margin: 10px 0px 10px 10px;
+}
+
+#lightbox.content  .buttons a img {
+    width: 100%;
+    height: auto;
+}
+
+#contener {
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#contener .pagewrap {
+    padding-top: 35px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#contener .page.lila {
+    z-index: 2;
+}
